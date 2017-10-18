@@ -23,7 +23,7 @@ def firstend():
 		#f=open('uniqueNo.dat','w+')
 		#f.write( %s    %s  %(uniqueNo,dataStore))
 		db.put(uniqueNo.encode(), dataStore.read())
-		return Response(json.dumps({"script-id": uniqueNo}),status = 201)
+		return Response(json.dumps({"script-id": uniqueNo}),status = 200)
 
 
 
